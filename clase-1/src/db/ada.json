@@ -1,0 +1,21 @@
+{
+  "index": {
+    "status": "active",
+    "statusCode": 200,
+    "paths": ["/", "/students", "/teachers"]
+  },
+  "students": [
+    { "nombre": "Ailen", "curso": "Backend" },
+    { "nombre": "Tatiana", "curso": "Backend" },
+    { "nombre": "Ariela", "curso": "Frontend" },
+    { "nombre": "Carolina", "curso": "Backend" },
+    { "nombre": "Lara", "curso": "Backend" }
+  ],
+  "teachers": [
+    {
+      "nombre": "Gabriel",
+      "especialidad": "Desarrollo Backend",
+      "departamento": "Desarrollo web"
+    }
+  ]
+}

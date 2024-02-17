@@ -1,0 +1,16 @@
+### Indice
+GET http://localhost:65000
+
+### Lista de alumnas
+GET http://localhost:65000/students
+
+### Lista de profesores
+GET http://localhost:65000/teachers
+
+### Agregar nueva alumna
+POST http://localhost:65000/student
+
+{
+  "nombre": "Carolina",
+  "curso": "Backend"
+}
