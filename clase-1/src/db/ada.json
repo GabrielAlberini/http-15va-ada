@@ -9,7 +9,8 @@
     { "nombre": "Tatiana", "curso": "Backend" },
     { "nombre": "Ariela", "curso": "Frontend" },
     { "nombre": "Carolina", "curso": "Backend" },
-    { "nombre": "Lara", "curso": "Backend" }
+    { "nombre": "Lara", "curso": "Backend" },
+    { "nombre": "Luisa", "curso": "Backend" }
   ],
   "teachers": [
     {

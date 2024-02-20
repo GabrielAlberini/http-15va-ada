@@ -14,3 +14,14 @@ POST http://localhost:65000/student
   "nombre": "Carolina",
   "curso": "Backend"
 }
+
+### Prueba 
+GET http://localhost:1234/asdasd
+
+### Agregar nuevo profesor
+POST http://localhost:1234/students
+
+{
+  "nombre": "Luisa",
+  "curso": "Backend"
+}

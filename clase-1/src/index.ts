@@ -41,6 +41,7 @@ const server = http.createServer((req, res) => {
         db.students.push(student);
 
         fs.writeFileSync("./src/db/ada.json", JSON.stringify(db));
+
         res.statusCode = 201;
         return res.end(
           JSON.stringify({ status: res.statusCode, newStudent: student.nombre })
@@ -51,7 +52,7 @@ const server = http.createServer((req, res) => {
   }
 
   res.statusCode = 404;
-  return res.end("Not found");
+  res.end(JSON.stringify({ response: "No se encuentra el recurso..." }));
 });
 
 // 65535 -> puertos diponibles en una pc
