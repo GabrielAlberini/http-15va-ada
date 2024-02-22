@@ -29,7 +29,7 @@ app.get("/api/character", async (req, res) => {
     };
   });
 
-  res.send(mappedCharacters);
+  res.json(mappedCharacters);
 });
 
 app.get("/api/episode", async (req, res) => {
@@ -55,6 +55,7 @@ app.get("/api/episode", async (req, res) => {
 
 app.get("/api/character/:id", async (req, res) => {
   const id = req.params.id;
+  console.log(req.params);
 
   const response = await fetch("https://rickandmortyapi.com/api/character");
   const data = await response.json();
@@ -67,7 +68,7 @@ app.get("/api/character/:id", async (req, res) => {
   res.json(character);
 });
 
-app.get("*", (req, res) => {
+app.use("*", (req, res) => {
   res.status(404).json({ error: "404 - Resource not found" });
 });
 

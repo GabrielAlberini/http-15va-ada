@@ -1,0 +1,14 @@
+### Indice 
+GET http://localhost:3005/api
+
+### Obtener personajes 
+GET http://localhost:3005/api/character
+
+### Obtener personajes 
+GET http://localhost:3005/api/episode
+
+### Obtener personajes 
+GET http://localhost:3005/api/casdasdasda
+
+### Obtener personajes 
+POST http://localhost:3005/api/casdasdasda
