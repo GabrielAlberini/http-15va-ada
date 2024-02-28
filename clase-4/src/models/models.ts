@@ -43,6 +43,21 @@ abstract class MoviesModel {
     }
     return { message: "Successfully modified movie" };
   };
+
+  static deleteMovie = (id: string) => {
+    const indexMovie = db.movies.findIndex((movie) => movie.id === id);
+
+    if (indexMovie === -1) return { error: "Movie not found" };
+
+    db.movies.splice(indexMovie, 1);
+
+    try {
+      fs.writeFileSync("./src/db/movies.json", JSON.stringify(db));
+    } catch (error) {
+      return new Error();
+    }
+    return { message: "Successfully deleted movie" };
+  };
 }
 
 export default MoviesModel;

@@ -22,5 +22,6 @@ moviesRouter.post("/movies", MoviesController.createMovie);
 moviesRouter.patch("/movies/:id", MoviesController.updateMovie);
 
 //DELETE
+moviesRouter.delete("/movies/:id", MoviesController.deleteMovie);
 
 export default moviesRouter;

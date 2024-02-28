@@ -37,7 +37,7 @@ abstract class MoviesController {
     if (response instanceof Error) {
       return res.status(500).json({ error: "Error to create movie" });
     }
-    res.json(newMovie);
+    return res.json(newMovie);
   };
 
   static updateMovie = (req: Request, res: Response) => {
@@ -57,7 +57,17 @@ abstract class MoviesController {
       res.status(400).json({ error: "Error to update movie" });
     }
 
-    res.json(response);
+    return res.json(response);
+  };
+
+  static deleteMovie = (req: Request, res: Response) => {
+    const { id } = req.params;
+    const response = MoviesModel.deleteMovie(id);
+    if (!response.message) {
+      res.status(400).json({ error: "Error to update movie" });
+    }
+
+    return res.json(response);
   };
 }
 

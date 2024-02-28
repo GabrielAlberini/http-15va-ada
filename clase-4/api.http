@@ -29,3 +29,6 @@ Content-Type:  application/json
   "name": "prueba 2",
   "rating": 3 
 }
+
+### Eliminar pelicula
+DELETE http://localhost:5555/api/movies/1e24b789-4355-4c8a-a847-22484021677a

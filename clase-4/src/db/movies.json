@@ -7,7 +7,7 @@
   "movies": [
     {
       "id": "1e24b789-4355-4c8a-a847-22484021677a",
-      "name": "Título de prueba.",
+      "name": "prueba 2",
       "year": 2010,
       "director": "Christopher Nolan",
       "cast": [
@@ -16,7 +16,7 @@
         "Joseph Gordon-Levitt",
         "Tom Hardy"
       ],
-      "rating": 111
+      "rating": 3
     },
     {
       "id": "2c9a4b68-5cab-4f3a-9317-62e8b3aadb6b",
@@ -40,7 +40,23 @@
       "rating": 8.6
     },
     {
-      "id": "4a5fe6ac-545e-4e3f-a926-07a3f636a303",
+      "id": "33e21a12-750f-4349-affc-58195d1ebde7",
+      "name": "Titanic",
+      "year": 2000,
+      "director": "James Cameron",
+      "cast": ["Actor 1", "Actor 2"],
+      "rating": 9
+    },
+    {
+      "id": "e7d968e6-5d4f-48c1-8377-f9b194cbc057",
+      "name": "Titanic",
+      "year": 2000,
+      "director": "James Cameron",
+      "cast": ["Actor 1", "Actor 2"],
+      "rating": 9
+    },
+    {
+      "id": "2480b2d1-b5f9-4282-9bcd-82dcb3126abd",
       "name": "Titanic",
       "year": 2000,
       "director": "James Cameron",
