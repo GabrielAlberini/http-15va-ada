@@ -1,0 +1,31 @@
+### Indice
+GET http://localhost:5555/api
+
+### Mostrar peliculas
+GET http://localhost:5555/api/movies
+
+### Mostrar pelicula por id
+GET http://localhost:5555/api/movies/1e24b789-4355-4c8a-a847-22484021677a
+
+### Crear Pelicula
+POST http://localhost:5555/api/movies
+Content-Type: application/json
+
+{
+  "name": "Titanic",
+  "year": 2000,
+  "director": "James Cameron",
+  "cast": [
+    "Actor 1", "Actor 2"
+  ],
+  "rating": 9
+}
+
+### Actualizar película
+PATCH http://localhost:5555/api/movies/1e24b789-4355-4c8a-a847-22484021677a
+Content-Type:  application/json
+
+{
+  "name": "prueba 2",
+  "rating": 3 
+}

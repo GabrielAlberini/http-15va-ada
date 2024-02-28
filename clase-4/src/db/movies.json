@@ -1,0 +1,51 @@
+{
+  "info": {
+    "name": "My App",
+    "description": "A Movies Database API",
+    "version": "1.0.0"
+  },
+  "movies": [
+    {
+      "id": "1e24b789-4355-4c8a-a847-22484021677a",
+      "name": "Título de prueba.",
+      "year": 2010,
+      "director": "Christopher Nolan",
+      "cast": [
+        "Leonardo DiCaprio",
+        "Ellen Page",
+        "Joseph Gordon-Levitt",
+        "Tom Hardy"
+      ],
+      "rating": 111
+    },
+    {
+      "id": "2c9a4b68-5cab-4f3a-9317-62e8b3aadb6b",
+      "name": "The Shawshank Redemption",
+      "year": 1994,
+      "director": "Frank Darabont",
+      "cast": ["Tim Robbins", "Morgan Freeman", "Bob Gunton", "William Sadler"],
+      "rating": 9.3
+    },
+    {
+      "id": "3d3a2b36-6ad3-4a5f-8a5b-63d4f4c3a4d2",
+      "name": "Parasite",
+      "year": 2019,
+      "director": "Bong Joon Ho",
+      "cast": [
+        "Song Kang-ho",
+        "Lee Sun-kyun",
+        "Cho Yeo-jeong",
+        "Choi Woo-shik"
+      ],
+      "rating": 8.6
+    },
+    {
+      "id": "4a5fe6ac-545e-4e3f-a926-07a3f636a303",
+      "name": "Titanic",
+      "year": 2000,
+      "director": "James Cameron",
+      "cast": ["Actor 1", "Actor 2"],
+      "rating": 9
+    }
+  ]
+}
