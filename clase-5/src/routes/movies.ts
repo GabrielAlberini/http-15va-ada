@@ -13,7 +13,6 @@ const moviesRouter = Router();
 
 //GET
 moviesRouter.get("/movies", MoviesController.getAll);
-
 moviesRouter.get("/movies/:id", MoviesController.getMovieById);
 
 //POST

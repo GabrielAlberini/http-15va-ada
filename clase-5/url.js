@@ -1,0 +1,5 @@
+const url = new URL(
+  "https://www.google.com/search?q=hola&sca_esv=a1ed381ddb91d5f7&sxsrf=ACQVn0-ge6zqgHg2USyJj36WR4C2Nj_-rw%3A1709161794905&source=hp&ei=Qr3fZZDsM4qz1sQPrLGd4AM&iflsig=ANes7DEAAAAAZd_LUvNw_RqigjGPpaHD76_R_JGQCcC-&ved=0ahUKEwiQlZXtk8-EAxWKmZUCHaxYBzwQ4dUDCBU&uact=5&oq=hola&gs_lp=Egdnd3Mtd2l6IgRob2xhMgoQIxiABBiKBRgnMgoQIxiABBiKBRgnMgoQIxiABBiKBRgnMgsQABiABBixAxiDATIKEAAYgAQYigUYQzIKEAAYgAQYigUYQzIKEC4YgAQYigUYQzILEAAYgAQYsQMYgwEyEBAuGIAEGIoFGEMYxwEY0QMyCxAAGIAEGLEDGIMBSM4GUPQCWPcFcAF4AJABAJgBmAKgAYoEqgEDMi0yuAEDyAEA-AEBmAIDoALqBKgCCsICBxAjGOoCGCfCAgcQLhjqAhgnwgIQEAAYgAQYigUYQxixAxiDAcICCBAAGIAEGLEDmAM3kgcHMS4wLjEuMQ&sclient=gws-wiz"
+);
+
+console.log(url);

@@ -5,10 +5,14 @@
 import { Request, Response } from "express";
 import MoviesModel from "../models/movies";
 import crypto from "node:crypto";
+import zod from "zod";
+import { validateMovie, validatePartialMovie } from "../validators/movies";
 
 abstract class MoviesController {
   static getAll = (req: Request, res: Response) => {
-    const movies = MoviesModel.getAll();
+    const querys = req.query;
+
+    const movies = MoviesModel.getAll(querys);
     if (!movies) return res.status(500).json({ error: "Server Error" });
     res.json(movies);
   };
@@ -21,7 +25,14 @@ abstract class MoviesController {
   };
 
   static createMovie = (req: Request, res: Response) => {
+    const responseValidator = validateMovie(req.body);
+
+    if (!responseValidator.success) {
+      return res.status(400).send(responseValidator.error);
+    }
+
     const { name, year, director, cast, rating } = req.body;
+
     const id = crypto.randomUUID();
 
     const newMovie = {
@@ -41,12 +52,13 @@ abstract class MoviesController {
   };
 
   static updateMovie = (req: Request, res: Response) => {
-    // Recepcionar los datos y enviarselos al modelo.
+    const responseValidator = validatePartialMovie(req.body);
 
-    // El parametro id viene en la url de la req
+    if (!responseValidator.success) {
+      return res.status(400).send(responseValidator.error);
+    }
+
     const { id } = req.params;
-    // El cuerpo de la req viene en el objeto req.body
-    // Destructuro las propiedades de req.body
     const { name, year, director, cast, rating } = req.body;
 
     const objMovie = { id, name, year, director, cast, rating };

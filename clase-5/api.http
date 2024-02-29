@@ -1,0 +1,35 @@
+### Indice
+GET http://localhost:5555/api
+
+### Mostrar peliculas
+GET http://localhost:5555/api/movies
+
+### Mostrar pelicula por id
+GET http://localhost:5555/api/movies/1e24b789-4355-4c8a-a847-22484021677a
+
+### Crear Pelicula
+POST http://localhost:5555/api/movies
+Content-Type: application/json
+
+{
+  "name": "Titanic",
+  "year": 2025,
+  "director": "James Cameron",
+  "cast": [
+    "Actor 1", "Actor 2"
+  ],
+  "rating":11,
+  "prueba maligna": "MUAJAJAJA"
+}
+
+### Actualizar película
+PATCH http://localhost:5555/api/movies/7af40beb-1d04-4285-a8b6-0823de4b09cb
+Content-Type:  application/json
+
+{
+  "name": "prueba 2",
+  "rating": "test"
+}
+
+### Eliminar pelicula
+DELETE http://localhost:5555/api/movies/7af40beb-1d04-4285-a8b6-0823de4b09cb
